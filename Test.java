@@ -18,7 +18,7 @@ Tarte chocolatRoyale=new Tarte(1,4); //
 	  chocolatRoyale.ajoutSucreChocolat(1,2);
 	  chocolatRoyale.affiche();
 	  
-	  Tarte foretBlanche=new Tarte("oumama",2,3);
+	  Tarte foretBlanche=new Tarte("abdssamad",2,3);
 	  foretBlanche.affiche();
 } 
       
