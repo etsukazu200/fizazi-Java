@@ -1,7 +1,9 @@
 class Tarte {
 	int quantiteSucre=1   ;  //// tt variabe commence par muniscule et la séparation  des noms se fait par majuscule
 	int quantiteChocolat=4; /// toute classe contient un constructeur qui initialise la classe , ( phase d'initialisation )
+	int age;
 	String name;
+	
 	
 	public Tarte(int sucre,int chocolat){
 			
