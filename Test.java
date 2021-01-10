@@ -13,7 +13,7 @@ Tarte chocolatRoyale=new Tarte(1,4); //
 	   //chocolatRoyale.affiche();                 //// appel d'une fonction sans argument
 	   
 	   
-	   chocolatRoyale=new Tarte("fati");
+	   chocolatRoyale=new Tarte("chocolatRoyale");
 	   
 	   ///chocolatRoyale.affiche();///
 	  chocolatRoyale.ajoutSucreChocolat(1,2);
@@ -23,14 +23,26 @@ Tarte chocolatRoyale=new Tarte(1,4); //
 	  //foretBlanche.affiche();
 	  
 	  
-	 Person mangeurTarte=new Person("jilali",18); ////////
+	 Person mangeurTarte=new Person("tibari",18,"homme"); ////////
 	  
 	  mangeurTarte.manger(foretNoir); ///// on fait l'appel d'une fonction avec le réference qu'on a crée avec le constructeur // 
  
-      mangeurTarte.manger(foretBlanche);                                              ////	  reference.fonction(argument); 
+      mangeurTarte.manger(foretBlanche);                                              ////	  reference.fonction(argument);
+	  
+     Person mangeuseTarte=new Person("fati",18,"femme");
+     mangeuseTarte.manger(chocolatRoyale);
+	 
+     TarteFactory four=new TarteFactory();
 
+                Tarte cacke =four.fabriquer(); 
+                 cacke.affiche();	
+         Tarte[] kikat=four.fabriquer(8);
+		 for( int i=0;i<8;i++){
+			 
+			 kikat[i].affiche();
+		 }
 
-                                                      
+				 
 }     
                                                               
            
