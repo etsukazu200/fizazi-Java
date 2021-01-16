@@ -1,3 +1,5 @@
+
+import java.util.ArrayList;
 class Test{ 
 int age; 
 int nbrePersonne=3;
@@ -36,12 +38,16 @@ Tarte chocolatRoyale=new Tarte(1,4); //
 
                 Tarte cacke =four.fabriquer(); 
                  cacke.affiche();	
-         Tarte[] kikat=four.fabriquer(8);
-		 for( int i=0;i<8;i++){
+         Tarte[] kikat=four.fabriquer(8);////
+		 for( Tarte kika : kikat ){    ////pour chaque kika dans(:) le tableau de kikat ---< la méme chose que kika[i].affiche()
 			 
-			 kikat[i].affiche();
+			 kika.affiche();
 		 }
-
+       ArrayList<Tarte> hlawiListe=four.fabrique(6);
+	   for ( Tarte hliwa : hlawiListe ){
+		   
+		   hliwa.affiche();
+	   }
 				 
 }     
                                                               
